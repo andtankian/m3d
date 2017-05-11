@@ -1,0 +1,30 @@
+{
+  "name": "m3d",
+  "main": "m3d.js",
+  "description": "A lightweight material design based dropdown with css animations.",
+  "keywords": [
+    "dropdown",
+    "dropup",
+    "material",
+    "design",
+    "dropdown",
+    "easy",
+    "dropdown"
+  ],
+  "authors": [
+    "Andrew Ribeiro"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies":{
+    "jquery":"~2"
+  }
+}
