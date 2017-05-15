@@ -33,6 +33,7 @@ THE SOFTWARE.
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="custom.css" />
+  <link rel="stylesheet" href="dist/m3d.min.css" />
 </head>
 
 <body>
@@ -85,8 +86,8 @@ THE SOFTWARE.
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4">
           <h4>An interesting dropdown</h4>
-          <button type="button" name="button" class="btn btn-default">M3D</button>
-          <ul class="m3d">
+          <button type="button" name="button" class="btn btn-default" m3d-toggle="m3d">M3D</button>
+          <ul class="m3d" id="m3d">
             <li>Option 1</li>
             <li>Option 2</li>
             <li>Option 3</li>
@@ -101,6 +102,12 @@ THE SOFTWARE.
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="dist/m3d.min.js"></script>
+  <script>
+      $(function(){
+          $(".m3d").m3d();
+      });
+  </script>
 </body>
 
 </html>
