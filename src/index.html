@@ -25,89 +25,121 @@ THE SOFTWARE.
 
 <html lang="pt-BR">
 
-<head>
-  <title>MD3 - A lightweight material design based dropdown.</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="custom.css" />
-  <link rel="stylesheet" href="dist/m3d.min.css" />
-</head>
+    <head>
+        <title>MD3 - A lightweight material design based dropdown.</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="dist/m3d.min.css" />
+        <link rel="stylesheet" href="custom.css" />
+    </head>
 
-<body>
-  <div class="page">
-    <header class="header m3d-nav">
-      <nav class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <h3 class="m-t-0"><a href="" class="link-brand">M3D</a></h3>
+    <body>
+        <div class="page" id="introduction">
+            <header class="header m3d-nav">
+                <nav class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <h3 class="m-t-0"><a href="" class="link-brand">M3D</a></h3>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <ul class="m3d-nav-list">
+                            <li><a href="#introduction" class="a-prevent scroll">Introduction</a></li>
+                            <li><a href="#examples" class="a-prevent scroll">Examples</a></li>
+                            <li><a href="#docs" class="a-prevent scroll">Docs</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="page-content m-t-110 p-10">
+                <h1>
+                    Material Design Dropdown
+                </h1>
+                <p class="lead">M3D is a simple and lightweight material design <em>based</em> dropdown that uses a combination of CSS3 animations and JQuery to reproduce fluid fade delays in menu itens.</p>
+                <p class="lead"><a href="#examples" class="btn btn-default btn-lg a-prevent">Show me</a></p>
+            </div>
+            <footer class="m-t-110">
+                This plugin was made with <span style="color: rgb(254, 61, 61);">&hearts;</span> by <a href="https://github.com/andtankian">Andrew Ribeiro</a>.
+            </footer>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <ul class="m3d-nav-list">
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#examples">Examples</a></li>
-            <li><a href="#docs">Docs</a></li>
-          </ul>
+        <div class="page other" id="examples">
+            <header class="header m-t-30">
+                <h2>Examples <br/><small>You can easily transform..</small></h2>
+            </header>
+            <div class="page-content container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <h4>A boring dropdown</h4>
+                        <div class="regular-dropdown">
+                            <a href="javascript:void(0);" class="btn-default btn">Very boring</a>
+                            <ul style="list-style: none; padding: 2px;">
+                                <li><a href="#" class="a-prevent">Option 1</a></li>
+                                <li><a href="#" class="a-prevent">Option 2</a></li>
+                                <li><a href="#" class="a-prevent">Option 3</a></li>
+                                <li><a href="#" class="a-prevent">Option 4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <h4 class="text-center">in</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <h4>An interesting dropdown</h4>
+                        <div style="display: table; margin: 0 auto;">
+                            <button type="button" name="button" class="btn btn-default" data-m3d-toggle="m3d">M3D</button>
+                            <ul class="m3d" id="m3d">
+                                <li><a href="javascript:void(0);">Option 1</a></li>
+                                <li><a href="javascript:void(0);">Option 2</a></li>
+                                <li><a href="javascript:void(0);">Option 3</a></li>
+                                <li><a href="javascript:void(0);">Option 4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
-    </header>
-    <div class="page-content m-t-110 p-10">
-      <h1>
-        Material Design Dropdown
-      </h1>
-      <p class="lead">M3D is a simple and lightweight material design <em>based</em> dropdown that uses a combination of CSS3 animations and JQuery to reproduce fluid fade delays in menu itens.</p>
-      <p class="lead"><a href="#examples" class="btn btn-default btn-lg">Show me</a></p>
     </div>
-    <footer class="m-t-110">
-      This plugin was made with <span style="color: rgb(254, 61, 61);">&hearts;</span> by <a href="#">Andrew Ribeiro</a>.
-    </footer>
-  </div>
-  <div class="page other">
-    <header class="header m-t-30">
-      <h2>Examples <br/><small>You can easily transform..</small></h2>
-    </header>
-    <div class="page-content">
-      <div class="row">
-        <div class="col-lg-3 col-lg-offset-1 col-md-3 col-lg-md-1 col-sm-3 col-sm-offset-1">
-          <h4>A boring dropdown</h4>
-          <div class="regular-dropdown">
-            <a href="javascript:void(0);" class="btn-default btn">Very boring</a>
-            <ul style="list-style: none; padding: 2px;">
-              <li><a href="#">Option 1</a></li>
-              <li><a href="#">Option 2</a></li>
-              <li><a href="#">Option 3</a></li>
-              <li><a href="#">Option 4</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <h4 class="text-center">in</h4>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <h4>An interesting dropdown</h4>
-          <button type="button" name="button" class="btn btn-default" data-m3d-toggle="m3d">M3D</button>
-          <ul class="m3d" id="m3d">
-            <li>Option 1</li>
-            <li>Option 2</li>
-            <li>Option 3</li>
-            <li>Option 4</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="dist/m3d.min.js"></script>
-  <script>
-      $(function(){
-          $("#m3d").m3d();
-      });
-  </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="dist/m3d.min.js"></script>
+    <script>
+        $(function () {
+            $.extend($.easing, {
+                easeInOutExpo: function (x, t, b, c, d) {
+                    if (t == 0)
+                        return b;
+                    if (t == d)
+                        return b + c;
+                    if ((t /= d / 2) < 1)
+                        return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
+                    return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
+                }
+            });
+            $("#m3d").m3d();
+            $("body").on("click", "a", function (e) {
+                var $t = $(e.target);
+                if ($t.hasClass("a-prevent")) {
+                    e.preventDefault();
+                }
+                if ($t.hasClass("scroll")) {
+                    var href = $t.attr("href");
+                    var location_target = $(href);
+
+                    if (!location_target[0])
+                        return false;
+
+                    $("body, html").animate({
+                        scrollTop: location_target.offset().top
+                    }, 1000, "easeInOutExpo");
+
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
