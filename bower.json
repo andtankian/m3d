@@ -1,6 +1,7 @@
 {
   "name": "m3d",
-  "main": "m3d.js",
+  "main": "m3d.js, m3d.css",
+  "version": "0.1.1",
   "description": "A lightweight material design based dropdown with css animations.",
   "keywords": [
     "dropdown",

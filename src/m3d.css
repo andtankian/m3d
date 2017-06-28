@@ -16,6 +16,7 @@ ul.m3d {
   vertical-align: baseline;
   list-style: none;
   background: white;
+  z-index: 9999;
 }
 
 ul.m3d li, ul.m3d li a {
@@ -30,11 +31,14 @@ ul.m3d {
   position: absolute;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
   -ms-transform: scale(0);
+  border-radius: 3px;
   /* IE 9 */
   -webkit-transform: scale(0);
   /* Chrome, Safari, Opera */
   transform: scale(0);
   display: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 ul.m3d li {
