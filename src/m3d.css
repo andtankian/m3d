@@ -55,6 +55,7 @@ ul.m3d li a {
   display: inline-block;
   white-space: pre;
   box-sizing: border-box;
+  transition: background 0.2s;
 }
 
 ul.m3d-toggled {

@@ -33,7 +33,7 @@ THE SOFTWARE.
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="dist/m3d.min.css" />
+        <link rel="stylesheet" href="src/m3d.css" />
         <link rel="stylesheet" href="custom.css" />
     </head>
 
@@ -58,7 +58,7 @@ THE SOFTWARE.
                     Material Design Dropdown
                 </h1>
                 <p class="lead">M3D is a simple and lightweight material design <em>based</em> dropdown that uses a combination of CSS3 animations and JQuery to reproduce fluid fade delays in menu itens.</p>
-                <p class="lead"><a href="#examples" class="btn btn-default btn-lg a-prevent">Show me</a></p>
+                <p class="lead"><a href="#examples" class="btn btn-default btn-lg a-prevent scroll">Show me</a></p>
             </div>
             <footer class="m-t-110">
                 This plugin was made with <span style="color: rgb(254, 61, 61);">&hearts;</span> by <a href="https://github.com/andtankian">Andrew Ribeiro</a>.
@@ -68,13 +68,13 @@ THE SOFTWARE.
             <header class="header m-t-30">
                 <h2>Examples <br/><small>You can easily transform..</small></h2>
             </header>
-            <div class="page-content container">
+            <div class="page-content container regular-text">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <h4>A boring dropdown</h4>
                         <div class="regular-dropdown">
                             <a href="javascript:void(0);" class="btn-default btn">Very boring</a>
-                            <ul style="list-style: none; padding: 2px;">
+                            <ul style="list-style: none; padding: 5px;">
                                 <li><a href="#" class="a-prevent">Option 1</a></li>
                                 <li><a href="#" class="a-prevent">Option 2</a></li>
                                 <li><a href="#" class="a-prevent">Option 3</a></li>
@@ -87,7 +87,7 @@ THE SOFTWARE.
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <h4>An interesting dropdown</h4>
-                        <div style="display: table; margin: 0 auto;">
+                        <div>
                             <button type="button" name="button" class="btn btn-default" data-m3d-toggle="m3d">M3D</button>
                             <ul class="m3d" id="m3d">
                                 <li><a href="javascript:void(0);">Option 1</a></li>
@@ -98,48 +98,192 @@ THE SOFTWARE.
                         </div>
                     </div>
                 </div>
+                <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+                    &nbsp;
+                    <p class="lead">More examples...</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <div class="text-center">
+                            <div>
+                                <button class="btn btn-primary" data-m3d-toggle="tl">Top Left</button>
+                                <ul class="m3d" id="tl">
+                                    <li><a href="javascript:void(0);">An action</a></li>
+                                    <li><a href="#javascript:void(0);">Some link</a></li>
+                                    <li><a href="javascript:void(0);">An option here</a></li>
+                                    <li><a href="javascript:void(0);">See something</a></li>
+                                    <li><a href="javascript:void(0);">Call a modal</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <div class="text-center">
+                            <div>
+                                <button class="btn btn-info" data-m3d-toggle="tr">Top Right</button>
+                                <ul class="m3d" id="tr">
+                                    <li><a href="javascript:void(0);">An action</a></li>
+                                    <li><a href="#javascript:void(0);">Some link</a></li>
+                                    <li><a href="javascript:void(0);">An option here</a></li>
+                                    <li><a href="javascript:void(0);">See something</a></li>
+                                    <li><a href="javascript:void(0);">Call a modal</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <div class="text-center">
+                            <div>
+                                <button class="btn btn-warning" data-m3d-toggle="br">Bottom Right</button>
+                                <ul class="m3d" id="br">
+                                    <li><a href="javascript:void(0);">An action</a></li>
+                                    <li><a href="#javascript:void(0);">Some link</a></li>
+                                    <li><a href="javascript:void(0);">An option here</a></li>
+                                    <li><a href="javascript:void(0);">See something</a></li>
+                                    <li><a href="javascript:void(0);">Call a modal</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <div class="text-center">
+                            <div>
+                                <button class="btn btn-danger" data-m3d-toggle="bl">Bottom Left</button>
+                                <ul class="m3d" id="bl">
+                                    <li><a href="javascript:void(0);">An action</a></li>
+                                    <li><a href="#javascript:void(0);">Some link</a></li>
+                                    <li><a href="javascript:void(0);">An option here</a></li>
+                                    <li><a href="javascript:void(0);">See something</a></li>
+                                    <li><a href="javascript:void(0);">Call a modal</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+                    &nbsp;
+                </div>
+            </div>
+            <a class="btn btn-darkness btn-lg a-prevent scroll m-t-50" href="#usage">How to use it?</a>
+        </div>
+        <div class="page" id="usage">
+            <header class="header m-t-30">
+                <h2>Usage</h2>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <h4>Just import it as any regular resource</h4>
+                        </div>
+                        <div class="regular-text">
+                            <pre><code class="glts"><</code><code class="glts">link</code> <code class="attributes">rel=</code><code class="strings">"stylesheet"</code><code class="attributes"> href=</code><code class="strings">"m3d.min.css"</code><code class="glts">></code><code class="glts"><</code><code class="glts">/link></code><br/></pre>
+                            <pre><code class="glts"><</code><code class="glts">script</code> <code class="attributes">type=</code><code class="strings">"text/javascript"</code><code class="attributes"> src=</code><code class="strings">"m3d.min.js"</code><code class="glts">></code><code class="glts"><</code><code class="glts">/script></code><br/></pre>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="text-center m-t-30">
+                            <h4>Then, use this structure</h4>
+                        </div>
+                        <div class="regular-text">
+                            <pre><code style="margin-left: -15em;" class="glts"><</code><code class="glts">div></code></pre>
+                            <pre><code style="margin-left: 20em;"class="glts"><</code><code class="glts">button</code><code class="attributes"> data-m3d-toggle=</code><code class="strings">"example"</code><code class="glts">></code><code>Button trigger</code><code class="glts"><</code><code class="glts">/button></code></pre>
+                            <pre><code style="margin-left: 4em;"class="glts"><</code><code class="glts">ul</code><code class="attributes"> class=</code><code class="strings">"m3d"</code><code class="attributes"> id=</code><code class="strings">"example"</code><code class="glts">></code></pre>
+                            <pre><code style="margin-left: 10em;"class="glts"><</code><code class="glts">li></code><code class="glts"><</code><code class="glts">a</code><code class="attributes"> href=</code><code class="strings">"#"</code><code class="glts">></code><code>Option 1</code><code class="glts"><</code><code class="glts">/a></code><code class="glts"><</code><code class="glts">/li></code></pre>
+                            <pre><code style="margin-left: 10em;"class="glts"><</code><code class="glts">li></code><code class="glts"><</code><code class="glts">a</code><code class="attributes"> href=</code><code class="strings">"#"</code><code class="glts">></code><code>Option 2</code><code class="glts"><</code><code class="glts">/a></code><code class="glts"><</code><code class="glts">/li></code></pre>
+                            <pre><code style="margin-left: 10em;"class="glts"><</code><code class="glts">li></code><code class="glts"><</code><code class="glts">a</code><code class="attributes"> href=</code><code class="strings">"#"</code><code class="glts">></code><code>Option 3</code><code class="glts"><</code><code class="glts">/a></code><code class="glts"><</code><code class="glts">/li></code></pre>
+                            <pre><code style="margin-left: 10em;"class="glts"><</code><code class="glts">li></code><code class="glts"><</code><code class="glts">a</code><code class="attributes"> href=</code><code class="strings">"#"</code><code class="glts">></code><code>Option 4</code><code class="glts"><</code><code class="glts">/a></code><code class="glts"><</code><code class="glts">/li></code></pre>
+                            <pre><code style="margin-left: 4em;" class="glts"><</code><code class="glts">/ul> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></pre>
+                            <pre><code style="margin-left: -15em;" class="glts"><</code><code class="glts">/div></code></pre>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a class="btn btn-default btn-lg m-t-50 scroll a-prevent" href="#usage2">And last thing...</a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="other page" id="usage2">
+            <header class="header m-t-30">
+                <h2>Usage</h2>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <h4>Just call this JS line and that's it!</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="regular-text">
+                            <pre class="other"><code class="other-glts">$(</code><code class="strings">"#example"</code><code class="other-glts">).m3d();</code></pre>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 m-t-30 regular-text">
+                        <p class="lead">
+                            There are various ready-to-use examples of material design based dropdown on internet, but almost none of those have captured the essence of list itens animations. That's why this small plugin do that.
+                        </p>
+                        <h4>The closer I've found was WhatsappWeb dropdown.. Their list itens animation is awesome :)</h4>
+                        <div class="col-lg-12">
+                            <img src="assets/m3d.gif" class="img img-responsive center-block"/>
+                        </div>
+                        <a href="#docs" class="btn btn-darkness btn-lg a-prevent scroll m-t-30">Can I set options?</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <div class="page" id="docs">
+            SOME DOCS HERE
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="dist/m3d.min.js"></script>
-    <script>
-        $(function () {
-            $.extend($.easing, {
-                easeInOutExpo: function (x, t, b, c, d) {
-                    if (t == 0)
-                        return b;
-                    if (t == d)
-                        return b + c;
-                    if ((t /= d / 2) < 1)
-                        return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
-                    return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
-                }
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="src/m3d.js"></script>
+        <script>
+            $(function () {
+                $.extend($.easing, {
+                    easeInOutExpo: function (x, t, b, c, d) {
+                        if (t == 0)
+                            return b;
+                        if (t == d)
+                            return b + c;
+                        if ((t /= d / 2) < 1)
+                            return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
+                        return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
+                    }
+                });
+
+                /*SETTING M3D'S*/
+                $("#m3d").m3d({
+                    origin: "tr",
+                    position: "right"
+                });
+
+                $("#tl").m3d();
+                $("#tr").m3d({origin: "tr", position: "right"});
+                $("#br").m3d({origin: "br", position: "right"});
+                $("#bl").m3d({origin: "bl", position: "left"});
+                $("body").on("click", "a", function (e) {
+                    var $t = $(e.target);
+                    if ($t.hasClass("a-prevent")) {
+                        e.preventDefault();
+                    }
+                    if ($t.hasClass("scroll")) {
+                        var href = $t.attr("href");
+                        var location_target = $(href);
+
+                        if (!location_target[0])
+                            return false;
+
+                        $("body, html").animate({
+                            scrollTop: location_target.offset().top
+                        }, 1000, "easeInOutExpo");
+
+                    }
+                });
             });
-            $("#m3d").m3d();
-            $("body").on("click", "a", function (e) {
-                var $t = $(e.target);
-                if ($t.hasClass("a-prevent")) {
-                    e.preventDefault();
-                }
-                if ($t.hasClass("scroll")) {
-                    var href = $t.attr("href");
-                    var location_target = $(href);
-
-                    if (!location_target[0])
-                        return false;
-
-                    $("body, html").animate({
-                        scrollTop: location_target.offset().top
-                    }, 1000, "easeInOutExpo");
-
-                }
-            });
-        });
-    </script>
-</body>
+        </script>
+    </body>
 
 </html>

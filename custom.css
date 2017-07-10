@@ -161,6 +161,8 @@ M3D CUSTOM
     display: none;
     box-shadow: 0px 0px 15px 1px rgba(85, 85, 85, 0.56);
     background-color: #fff;
+    position: absolute;
+    z-index: 9999;
 }
 
 .regular-dropdown ul li {
@@ -176,4 +178,44 @@ M3D CUSTOM
 
 .regular-dropdown a:focus+ul {
     display: block;
+}
+
+.regular-text {
+    text-shadow: none;
+}
+
+/*CUSTOM BOOTSTRAP BUTTON*/
+
+.btn-darkness {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-darkness:hover,.btn-darkness:active, .btn-darkness:focus {
+    color: #fff;
+}
+
+/*CUSTOM PRE CODES*/
+
+.glts {
+    color: #2a35ee;
+}
+.other-glts {
+    color: #1cfaf2
+}
+.strings {
+    color: #fe8e25;
+}
+
+.attributes {
+    color: #45fe25;
+}
+
+pre{
+    border: none;
+    margin-bottom: -5px;
+}
+
+pre.other {
+    background-color: #333;
 }
